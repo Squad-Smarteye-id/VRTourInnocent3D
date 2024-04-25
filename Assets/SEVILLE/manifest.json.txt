@@ -1,0 +1,14 @@
+{
+  "name": "com.smarteye.seville",
+  "version": "2.2",
+  "displayName": "Seville",
+  "description": "This is an example package",
+  "documentationUrl": "https://www.smarteye.id",
+  "dependencies": {
+    "com.unity.inputsystem": "1.6.3",
+    "com.unity.xr.interaction.toolkit": "2.4.3"
+  },
+  "enableLockFile": true,
+  "resolutionStrategy": "highestMinor",
+  "testables": [ "com.unity.package-1", "com.unity.package-2" ]
+}

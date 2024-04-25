@@ -1,0 +1,10 @@
+Untagged
+Respawn
+Finish
+EditorOnly
+MainCamera
+Player
+GameController
+Left Hand
+Right Hand
+VideoPlayerCanvas

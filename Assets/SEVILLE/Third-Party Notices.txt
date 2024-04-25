@@ -1,0 +1,42 @@
+Third-Party Notices 
+
+1. LeanTween:
+   - Version: 2.51
+   - Owner or License Provider: Russell Savage - Dented Pixel
+   - License Type: MIT License (MIT) & BSD License
+   - License Information: See the LICENSE.txt file for complete information.
+   - License Link: https://github.com/dentedpixel/LeanTween/blob/master/Assets/LeanTween/License.txt
+
+2. Mixed Reality Toolkit:
+   - Version: 2
+   - Owner or License Provider: Microsoft Corporation
+   - License Type: MIT License
+   - License Information: See the LICENSE.txt file for complete information.
+   - License Link: https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/LICENSE.md
+
+3. XR Interaction Toolkit:
+   - Version: 2.4.3
+   - Owner or License Provider: Unity Technologies
+   - License Type: Unity Companion License for Unity-dependent projects
+   - License Information: See the LICENSE.txt file for complete information.
+   - License Link: https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.4/license/LICENSE.html
+
+---
+
+- LeanTween:
+
+The MIT License (MIT)
+Copyright (c) 2017 Russell Savage - Dented Pixel
+
+BSD License (for LeanTween - Easing Equations):
+Copyright (c)2001 Robert Penner
+
+- Mixed Reality Toolkit:
+
+MIT License
+Copyright (c) Microsoft Corporation.
+
+- XR Interaction Toolkit:
+
+Unity Companion License (for XR Interaction Toolkit)
+XR Interaction Toolkit copyright © 2023 Unity Technologies

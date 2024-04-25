@@ -1,0 +1,9 @@
+Default
+TransparentFX
+Ignore Raycast
+Water
+UI
+Player
+NonInteractable
+Intractable
+Teleport
