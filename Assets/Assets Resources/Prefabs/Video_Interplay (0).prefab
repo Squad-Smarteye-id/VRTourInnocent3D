@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 3323153167900916953}
   - component: {fileID: 1787126547028718080}
   m_Layer: 5
-  m_Name: INNOCENT_VIDEO PLAYER CANVAS
+  m_Name: Video_Interplay (0)
   m_TagString: VideoPlayerCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
