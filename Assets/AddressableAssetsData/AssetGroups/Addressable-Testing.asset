@@ -17,14 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: e3fcebab6ec1dd34fb0b9c121c11d796
   m_SerializeEntries:
-  - m_GUID: d52ce3c0f1a9a884193dc29457183ca7
-    m_Address: Assets/Assets Resources/Test Addressable/Kotak.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - default
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0c60e4f93ee8c41408e2cbe8da1fe14c
-    m_Address: Assets/Assets Resources/Test Addressable/Capsule.prefab
+  - m_GUID: 9eca5a7506a8f164d8e747838ab46c5b
+    m_Address: Assets/Assets Resources/Prefabs/VidioSatu.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - default

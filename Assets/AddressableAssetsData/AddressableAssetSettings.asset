@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: fc594074fa36a134da0e04b5983796a0
   m_currentHash:
     serializedVersion: 2
-    Hash: 7c04af44b1ec145e06322115aa71864d
+    Hash: ad04f6a37675065924a6c88b60e90ed6
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
       - m_Id: 45b4d30e4de68a84594effa2728e648d
         m_Value: ServerData/[BuildTarget]
       - m_Id: 9fe96c1a57afc1449af83f5c190f28bc
-        m_Value: 
+        m_Value: https://testing-rafly.s3.ap-southeast-1.amazonaws.com/ServerData2/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: 9530cd4b4a7f1a24fb43d239572da86a
       m_Name: BuildTarget
@@ -88,6 +88,8 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - Vidio
+    - Audio
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 1a8bdff75d7484641a47624bbd7e59a7, type: 2}

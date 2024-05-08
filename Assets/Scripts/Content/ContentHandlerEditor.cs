@@ -2,6 +2,7 @@
 using UnityEditor;
 namespace VirtualInnocent.Content
 {
+#if UNITY_EDITOR
     [CustomEditor(typeof(ContentHandler))]
     public class ContentHandlerEditor : Editor
     {
@@ -60,4 +61,5 @@ namespace VirtualInnocent.Content
             serializedObject.ApplyModifiedProperties();
         }
     }
+#endif
 }
