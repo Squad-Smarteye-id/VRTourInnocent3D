@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: d175cf51aee6650408f1b5649d196046
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black1.006
+    second: {fileID: 2100000, guid: b29c6a2090c2f9040883f05d01b98587, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black1.009
+    second: {fileID: 2100000, guid: 2f0af31f2943dec479ca4adb84e1bd1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black2.012
+    second: {fileID: 2100000, guid: 8867c5ae445145947afccdb8bcfd2b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black2.015
+    second: {fileID: 2100000, guid: 90ded35bb3b66da4790aacf22fe1e049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BoxIntro
+    second: {fileID: 2100000, guid: 5f0d9c131b238b54ba5a012c4139e510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cardboard.005
+    second: {fileID: 2100000, guid: b8f12b7698968954b9916cf5c802d2f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IntroKanan.008
+    second: {fileID: 2100000, guid: bc853c695d73a7b4b833af9b989323db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IntroKiri.008
+    second: {fileID: 2100000, guid: df8305cda7ad74e42b8a3d2d4621af60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonPutih.001
+    second: {fileID: 2100000, guid: 97bb73facb10ab643990da9eba12be05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonPutih.015
+    second: {fileID: 2100000, guid: 37a538b7b61c99748a16efca928cd4c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QR.Border.008
+    second: {fileID: 2100000, guid: c2e6687cd69f8694a9a59ff1265751b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QRSmarteye.005
+    second: {fileID: 2100000, guid: 12ec0e54ee80f1a49bee3569d98ea056, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignChamber1.002
+    second: {fileID: 2100000, guid: d49fe6bfcd706cc45a99c4b223762bd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignChamber2.002
+    second: {fileID: 2100000, guid: 12eedc5cf4fc7a840ad7a439bbbfccbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignMetalic.015
+    second: {fileID: 2100000, guid: d0e365e2bc6aa7645aadec70059aa9de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignMetalic.016
+    second: {fileID: 2100000, guid: b6e765e0eedad124989641e457a1302e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignMetalicText.006
+    second: {fileID: 2100000, guid: 96ab7fcd1f874724f8426290aeae207c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignMetalicText.008
+    second: {fileID: 2100000, guid: dbdc70fea95fa35479d9d316eb78e936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmarteyeTv2.002
+    second: {fileID: 2100000, guid: 9d5c9f0f8ac2d6b49afc6cf84406fb4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sofa.005
+    second: {fileID: 2100000, guid: 2c4877085e21da54babe8501102e000c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TextInterplay.005
+    second: {fileID: 2100000, guid: 8bc8150745a17f143a14e7f93db0a793, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VRLAB.009
+    second: {fileID: 2100000, guid: 22a9053ce3e160b4f9f124008db3de68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VRLAB.010
+    second: {fileID: 2100000, guid: ea610b19cbd29d545809409d5d8dbf21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VRLAB.011
+    second: {fileID: 2100000, guid: 5b6896d4d45d7ff459b41d95cfc0cdf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White1.012
+    second: {fileID: 2100000, guid: 605dc035da6cef042bc60aa752fd9ff7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White1.015
+    second: {fileID: 2100000, guid: 3b5592ea4b20f004780529d20d10692f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aTvBorder
+    second: {fileID: 2100000, guid: 8d96edb8d50f42442bcabbb0892be52a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aWhite Interior
+    second: {fileID: 2100000, guid: 32cdec8459c61f94c9a7e862c69a0c8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye.003
+    second: {fileID: 2100000, guid: c6019ad5303c56a4688fc3561b8eabde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kaca 2
+    second: {fileID: 2100000, guid: b3ea5b550cc9b8341a088e14f4a04c47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic grey.005
+    second: {fileID: 2100000, guid: b7921c1511b4ad94ca6533d29e982fe7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: smarteyeTV.002
+    second: {fileID: 2100000, guid: 8a1615289fc00df4fa8f30ad432725d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: telkom coi.005
+    second: {fileID: 2100000, guid: 8ca73f3b3101e534c9701f35aa1760a8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 0ce2ugyp-320
+    second: {fileID: 2800000, guid: 76a1ed62dc5c96e4fbc8a28589120588, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 4hi6xbg1-320
+    second: {fileID: 2800000, guid: f69b2a1cfc18a4442816b12992c5be61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Chamber1
+    second: {fileID: 2800000, guid: 4fd67f058cd57c74f8520b49071a1add, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Chamber2
+    second: {fileID: 2800000, guid: f2d48c7024a2b78439f9d92c2e01234b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IntroKanan
+    second: {fileID: 2800000, guid: 71ac64a5b56368543aaebf9bc8fcf018, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IntroKiri
+    second: {fileID: 2800000, guid: 6ccae25c0e6e25640b139ff2b3c05a7e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: QRSmartEye
+    second: {fileID: 2800000, guid: cf7b0d8ef0ca7884a9dd0d92072e57d5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Standing TV Logo Telkom
+    second: {fileID: 2800000, guid: f52c21aaf2efc6644b5957cd958046da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fabric_134_normal-2K
+    second: {fileID: 2800000, guid: 14750de547897524d801ba3b6946dae0, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
