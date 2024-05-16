@@ -17,8 +17,20 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: e3fcebab6ec1dd34fb0b9c121c11d796
   m_SerializeEntries:
-  - m_GUID: 9eca5a7506a8f164d8e747838ab46c5b
-    m_Address: Assets/Assets Resources/Prefabs/VidioSatu.prefab
+  - m_GUID: a8816a29b2589ac42923b93fcbe7a1e3
+    m_Address: Assets/Assets Resources/Test Addressable/MediaVidio2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e8c02e86f80c5047875e1ec5709b2c3
+    m_Address: Assets/Assets Resources/Test Addressable/MediaVidio1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f18e9bedab1c0634097f6702586459f0
+    m_Address: Assets/Assets Resources/Test Addressable/MediaVidio3.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - default

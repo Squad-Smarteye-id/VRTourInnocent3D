@@ -19,17 +19,25 @@ namespace ScriptTutorials
 
         private void InitializeInputDevices()
         {
-            List<InputDevice> devices = new List<InputDevice>();
-            InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Controller, devices);
+            if (!_rightController.isValid)
+                InitializeInputDevice(InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Right, ref _rightController);
+            if (!_leftController.isValid)
+                InitializeInputDevice(InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Left, ref _leftController);
+            if (!_HMD.isValid)
+                InitializeInputDevice(InputDeviceCharacteristics.HeadMounted, ref _HMD);
+        }
 
-            foreach (var device in devices)
+        private void InitializeInputDevice(InputDeviceCharacteristics inputCharacteristics, ref InputDevice inputDevice)
+        {
+            List<InputDevice> devices = new List<InputDevice>();
+            //Call InputDevices to see if it can find any devices with the characteristics we're looking for
+            InputDevices.GetDevicesWithCharacteristics(inputCharacteristics, devices);
+
+            //Our hands might not be active and so they will not be generated from the search.
+            //We check if any devices are found here to avoid errors.
+            if (devices.Count > 0)
             {
-                if (device.characteristics.HasFlag(InputDeviceCharacteristics.Right))
-                    _rightController = device;
-                else if (device.characteristics.HasFlag(InputDeviceCharacteristics.Left))
-                    _leftController = device;
-                else if (device.characteristics.HasFlag(InputDeviceCharacteristics.HeadMounted))
-                    _HMD = device;
+                inputDevice = devices[0];
             }
         }
 

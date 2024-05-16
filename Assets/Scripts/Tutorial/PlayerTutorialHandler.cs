@@ -1,33 +1,77 @@
 using UnityEngine;
 using UnityEngine.XR;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace ScriptTutorials
 {
     public class PlayerTutorialHandler : MonoBehaviour
     {
-        private InputData InputData;
-        private PlayerTutorialManager playerTutorialManager;
+        private InputData inputData;
+        private PlayerTutorialManager tutorialManager;
 
-        private float lefttriggerValue;
-        private float righttriggerValue;
+        private bool tutorialStarted;
+
+        // Daftar aksi pengujian yang sesuai dengan indeks tutorial
+        private Dictionary<int, System.Action> tutorialTests = new Dictionary<int, System.Action>();
 
         private void Start()
         {
-            InputData = GetComponent<InputData>();
-            playerTutorialManager = GetComponent<PlayerTutorialManager>();
+            inputData = GetComponent<InputData>();
+            tutorialManager = GetComponent<PlayerTutorialManager>();
+
+            tutorialStarted = false;
+            // Menambahkan aksi pengujian ke dalam dictionary
+            tutorialTests.Add(0, HeadTest);
+            tutorialTests.Add(1, WalkTest);
+            tutorialTests.Add(2, SelectTest);
         }
 
-        #region test method
-
-
-
-        //test nengok
-        public void HeadTest()
+        private void Update()
         {
-            // tutor kepala
-            if (InputData._HMD.TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion headMountedValue))
+            // Lakukan pengujian secara berurutan di sini
+            if (tutorialStarted) { 
+            
+            RunSequentialTests();
+            
+            }
+        }
+
+        public void TutorialStart()
+        {
+            tutorialStarted = true;
+        }
+
+        private void RunSequentialTests()
+        {
+            // Jika tutorial manager atau input data tidak diatur, keluar dari metode ini
+            if (tutorialManager == null || inputData == null)
+                return;
+
+            int currentTutorialIndex = tutorialManager.GetCurrentTutorialIndex();
+
+            // Memeriksa apakah indeks tutorial saat ini valid dan terdapat aksi pengujian yang terkait
+            if (tutorialTests.ContainsKey(currentTutorialIndex))
+            {
+                // Menjalankan aksi pengujian yang sesuai dengan indeks tutorial saat ini
+                tutorialTests[currentTutorialIndex].Invoke();
+            }
+            else
+            {
+                Debug.LogWarning("Tidak ada aksi pengujian yang terkait dengan indeks tutorial saat ini.");
+
+                // Jika tutorialList kosong dan indeks saat ini adalah 0, jalankan HeadTest
+                if (currentTutorialIndex == 0 && tutorialManager.GetTutorialListCount() == 0)
+                {
+                    Debug.LogWarning("Menggunakan HeadTest karena tutorialList kosong.");
+                    HeadTest();
+                }
+            }
+        }
+
+        // Metode pengujian untuk tutorial kepala
+        private void HeadTest()
+        {
+            if (inputData._HMD.TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion headMountedValue))
             {
                 Vector3 eulerRotation = headMountedValue.eulerAngles;
 
@@ -43,65 +87,50 @@ namespace ScriptTutorials
                 if (yRotation >= 50.0f && yRotation <= 90.0f || yRotation >= 270.0f && yRotation <= 310.0f)
                 {
                     Debug.Log("head berhasil : " + yRotation);
-                    playerTutorialManager.CompleteCurrentTutorial();
+                    tutorialManager.CompleteCurrentTutorial();
 
                 }
             }
         }
 
-
-
-        //test jalan
-        public void WalkTest()
+        // Metode pengujian untuk tutorial berjalan
+        private void WalkTest()
         {
-            Vector2 joystickInput = InputData.GetLeftThumbstickInput(); // Menggunakan fungsi GetLeftThumbstickInput dari InputData
+            Vector2 joystickInput = inputData.GetLeftThumbstickInput();
 
-            // Cek input untuk gerakan maju atau mundur
+            // Lakukan pengujian gerakan maju atau mundur
             if (joystickInput.y > 0.5f || joystickInput.y < -0.5f)
             {
-                Debug.Log("Player sedang berjalan: " + joystickInput.y);
-
-                // Tandai tutorial berjalan sebagai selesai
-                playerTutorialManager.CompleteCurrentTutorial();
+                Debug.Log("Pengujian gerakan berjalan berhasil: " + joystickInput.y);
+                tutorialManager.CompleteCurrentTutorial();
             }
         }
 
-
-
-        //test select tombol.
-        public void SelectTest()
+        // Metode pengujian untuk tutorial pemilihan
+        private void SelectTest()
         {
-            // Check left trigger
-            if (InputData._leftController.TryGetFeatureValue(CommonUsages.trigger, out lefttriggerValue))
+            float leftTriggerValue;
+            float rightTriggerValue;
+
+            // Periksa input tombol kiri
+            if (inputData._leftController.TryGetFeatureValue(CommonUsages.trigger, out leftTriggerValue))
             {
-                if (lefttriggerValue >= 1)
+                if (leftTriggerValue >= 1)
                 {
-                    Debug.Log("Left trigger activated");
-                    playerTutorialManager.CompleteCurrentTutorial();
+                    Debug.Log("Tombol kiri diaktifkan");
+                    tutorialManager.CompleteCurrentTutorial();
                 }
             }
 
-            // Check right trigger
-            if (InputData._rightController.TryGetFeatureValue(CommonUsages.trigger, out righttriggerValue))
+            // Periksa input tombol kanan
+            if (inputData._rightController.TryGetFeatureValue(CommonUsages.trigger, out rightTriggerValue))
             {
-                if (righttriggerValue >= 1)
+                if (rightTriggerValue >= 1)
                 {
-                    Debug.Log("Right trigger activated");
-                    playerTutorialManager.CompleteCurrentTutorial();
+                    Debug.Log("Tombol kanan diaktifkan");
+                    tutorialManager.CompleteCurrentTutorial();
                 }
             }
-
         }
-
-        #endregion
-
-
-        private void Update()
-        {
-            SelectTest();
-        }
-
-
     }
 }
-
