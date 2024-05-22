@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 75444da4d213421409bcce5e789ac4bd
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black2.005
+    second: {fileID: 2100000, guid: 605d49d15e6ef4b448291a8a71384a8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black2.006
+    second: {fileID: 2100000, guid: 49237c2274b12ed4084491dbcb589f48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlenderKeyboardMat.001
+    second: {fileID: 2100000, guid: ff15504b42dc6e04a9f8eb2408ea1868, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brass1.001
+    second: {fileID: 2100000, guid: bc17c6c46f0560046863e39a64a84c04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey2.001
+    second: {fileID: 2100000, guid: 311f6091c5d3722499d47214d5c76c60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IOTStand.001
+    second: {fileID: 2100000, guid: 52dbf2f2a0202f547a1d54d18a9d04e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IotTv.001
+    second: {fileID: 2100000, guid: d3b187642db44a84a97c18c1dc64b443, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.176
+    second: {fileID: 2100000, guid: b2ad374774f6da14586715e5dbda53c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.177
+    second: {fileID: 2100000, guid: d29247d350b3eeb40942c37932e43b4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.181
+    second: {fileID: 2100000, guid: 15fafd71653621f49b692451e77a701e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonPutih.022
+    second: {fileID: 2100000, guid: 493a4a392a78cd74a9748b5bc142d79c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver1.001
+    second: {fileID: 2100000, guid: b355f4cb6220b7148b555169a7cefbd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White1.006
+    second: {fileID: 2100000, guid: 526d03f0402cca649b65c21e33d5fa72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _32.001
+    second: {fileID: 2100000, guid: 53014c79702d1a840921ce9c01f40442, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aTvBorder
+    second: {fileID: 2100000, guid: 63bc5fbddafa48c40a863d48417f0979, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aWhite Interior
+    second: {fileID: 2100000, guid: be5603d682996e6458b733375b594770, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black mat.002
+    second: {fileID: 2100000, guid: f6c7f341a55182a4a8066fad0b086cb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doorToilet.002
+    second: {fileID: 2100000, guid: 5a458f50317e30b4bab3039b91d70ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doorToilet.003
+    second: {fileID: 2100000, guid: b693a996f0c04a64baec41302da8281c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kaca 2
+    second: {fileID: 2100000, guid: 0b5320b54101a0e48bfae09a5c9bbfb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal body.002
+    second: {fileID: 2100000, guid: eb87cf82b7c896c40b65e321751e9a27, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 4007ES-HYBRID-FACP-1
+    second: {fileID: 2800000, guid: 64b75a8485e469f4c95dea7d106607c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IOTStand
+    second: {fileID: 2800000, guid: 2fa3690f08df98b46836f42dcf37b6cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IOTtable
+    second: {fileID: 2800000, guid: 6b233e6059698cd4097be2c32a398823, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KB-Metalness
+    second: {fileID: 2800000, guid: f5cbbae47e615c946abd940a0ba53ba9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KB-Normal
+    second: {fileID: 2800000, guid: cbe78b79ba82d8c4481e1d97bde25db1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KB-Roughness
+    second: {fileID: 2800000, guid: bc8a9423e7516e043b7ad89a71dafd43, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KB-color
+    second: {fileID: 2800000, guid: aa59aea146608dd49a55e4e3824b3457, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screenshot 2023-10-25 174112
+    second: {fileID: 2800000, guid: 904f5c392216dcc42b225cc4c87c5919, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Telkom IoT
+    second: {fileID: 2800000, guid: 3b3886420d0c60945b939c49534c8ca1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: inllet (3)
+    second: {fileID: 2800000, guid: e367f923cfc8f2743a87693839910ece, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: japanese-house-entrance
+    second: {fileID: 2800000, guid: c2725ebd49bdd174ca9e8f93f5c891f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: me-c6524gs-8s-front
+    second: {fileID: 2800000, guid: 5d17b340049e28e44a3d3361f8e9e839, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: s-l1600
+    second: {fileID: 2800000, guid: 751b5569d5ed7c94e89b0145e36f4be8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wc-sign-city
+    second: {fileID: 2800000, guid: 14029a491ca55de42a79a644ff93630f, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
