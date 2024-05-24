@@ -119,6 +119,8 @@ namespace ScriptTutorials
             tutorialTests.Add(0, false); // HeadTest
             tutorialTests.Add(1, false); // WalkTest
             tutorialTests.Add(2, false); // SelectTest
+            tutorialTests.Add(3, false); // CursorTest
+            
         }
     }
 }

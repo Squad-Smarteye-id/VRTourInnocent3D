@@ -13263,6 +13263,9 @@ MonoBehaviour:
   - tutorialPicture: {fileID: 21300000, guid: a6e9e9736379c164e81fdfd2c806a91c, type: 3}
     tutorialStatus: 0
     relatedTestIndex: 3
+  - tutorialPicture: {fileID: 21300000, guid: d7348fb3f11ba4f6f933462328963785, type: 3}
+    tutorialStatus: 0
+    relatedTestIndex: 3
   tutorialImage: {fileID: 596650440}
   tutorialSwitchDelay: 1
 --- !u!4 &1839640557

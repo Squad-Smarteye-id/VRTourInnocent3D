@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 namespace ScriptTutorials
 {
@@ -24,6 +25,7 @@ namespace ScriptTutorials
             tutorialTests.Add(0, HeadTest);
             tutorialTests.Add(1, WalkTest);
             tutorialTests.Add(2, SelectTest);
+            tutorialTests.Add(3, CursorTest);
         }
 
         private void Update()
@@ -132,5 +134,21 @@ namespace ScriptTutorials
                 }
             }
         }
+
+        private void CursorTest()
+        {
+            // tutor tangan
+            if (inputData._rightController.TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 controllerPosition))
+            {
+                if (controllerPosition.y >= 0.5f && controllerPosition.x > 0f)
+                {
+                    Debug.Log(" Controller Berhasil : " + controllerPosition);
+
+                    tutorialManager.CompleteCurrentTutorial();
+
+                }
+            }
+        }
+
     }
 }

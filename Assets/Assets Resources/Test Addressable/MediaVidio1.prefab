@@ -1536,6 +1536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 2858782106383022727}
+  uiToShow: []
+  checker: {fileID: 4804980871877215304}
 --- !u!114 &4804980871877215304
 MonoBehaviour:
   m_ObjectHideFlags: 0
