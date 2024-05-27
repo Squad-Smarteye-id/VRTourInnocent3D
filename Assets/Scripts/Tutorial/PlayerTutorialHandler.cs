@@ -23,9 +23,9 @@ namespace ScriptTutorials
             tutorialStarted = false;
             // Menambahkan aksi pengujian ke dalam dictionary
             tutorialTests.Add(0, HeadTest);
-            tutorialTests.Add(1, WalkTest);
+            tutorialTests.Add(1, CursorTest);
             tutorialTests.Add(2, SelectTest);
-            tutorialTests.Add(3, CursorTest);
+            tutorialTests.Add(3, WalkTest);
         }
 
         private void Update()

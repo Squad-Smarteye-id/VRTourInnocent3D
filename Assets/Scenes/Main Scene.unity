@@ -6987,26 +6987,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a1d0f3e1582904cbb80f82bd7db06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assetLabelReference:
-    m_LabelString: default
-  uiText: {fileID: 1677650903}
-  _instanceObject: []
-  progressBar: {fileID: 609198325}
-  AfterLoad:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1838352263}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  instantiateObjects:
+  - m_AssetGUID: ce081c888ed9b40409db1b1b1eae2516
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: fc6efbf371ba30e428f97f0fded9647d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 1323b241cc6354d49a8f651c6ac67c02
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 5b5bbd3987c650a45a5d4dc0d79229ab
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: ecc3a0e68e9a27544b0cb2cd8c07c36f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 1bbad6b0f7c0d0d498aeea75c1ed5ea6
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 775b3770e64d6c647b1d791d39558756
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1 &452019741
 GameObject:
   m_ObjectHideFlags: 0
@@ -22241,7 +22250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1390156177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22440,7 +22449,7 @@ RectTransform:
   m_Father: {fileID: 1168235879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29236,6 +29245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Loading Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3377108377699609893, guid: 2f7c9a91335112145a2742cb9b8763a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5762482678291324377, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}

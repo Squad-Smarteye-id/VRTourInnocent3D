@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 namespace ScriptTutorials
@@ -9,7 +10,7 @@ namespace ScriptTutorials
     [Serializable]
     public class MyTutorial
     {
-        public Sprite tutorialPicture;
+        public GameObject TutorialCanvas;
         public bool tutorialStatus;
         public int relatedTestIndex; // Indeks aksi pengujian terkait
     }
@@ -17,40 +18,44 @@ namespace ScriptTutorials
     public class PlayerTutorialManager : MonoBehaviour
     {
         [SerializeField] private List<MyTutorial> tutorialList = new List<MyTutorial>();
-        [SerializeField] private Image tutorialImage;
-        [SerializeField] private float tutorialSwitchDelay = 3f; // Jeda (delay) sebelum beralih ke tutorial berikutnya
+        [SerializeField] private float tutorialSwitchDelay = 3f;
 
         private int currentTutorialIndex = 0;
+        
+        //checkbox
+        //private Image currentCheckbox;
+        //public Sprite checkedCheckbox;
+        //private Sprite originalSprite;
+
+        private void Awake()
+        {
+            // Inisialisasi dictionary aksi pengujian
+            tutorialTests.Add(0, false); // HeadTest
+            tutorialTests.Add(1, false); // WalkTest
+            tutorialTests.Add(2, false); // SelectTest
+            tutorialTests.Add(3, false); // CursorTest
+
+        }
 
         private void Start()
         {
-            // Memulai tutorial pertama saat game dimulai
-            SetupCurrentTutorial();
+            //originalSprite = currentCheckbox.sprite;
         }
 
-        private void SetupCurrentTutorial()
+        public void SetupCurrentTutorial()
         {
             // Memeriksa apakah indeks tutorial saat ini valid
             if (currentTutorialIndex >= 0 && currentTutorialIndex < tutorialList.Count)
             {
                 MyTutorial currentTutorial = tutorialList[currentTutorialIndex];
 
-                // Menampilkan gambar tutorial pada Image UI
-                if (tutorialImage != null && currentTutorial.tutorialPicture != null)
+                foreach (MyTutorial tutorial in tutorialList)
                 {
-                    tutorialImage.sprite = currentTutorial.tutorialPicture;
-                }
-                else
-                {
-                    Debug.LogWarning("Image tutorial atau gambar tutorial tidak diatur dengan benar.");
+                    tutorial.TutorialCanvas.SetActive(false);
                 }
 
-                // Memperbarui aksi pengujian yang terkait dengan tutorial saat ini
-                int relatedTestIndex = currentTutorial.relatedTestIndex;
-                if (relatedTestIndex >= 0 && relatedTestIndex < tutorialTests.Count)
-                {
-                    tutorialTests[currentTutorial.relatedTestIndex] = currentTutorial.tutorialStatus;
-                }
+                currentTutorial.TutorialCanvas.SetActive(true);
+
             }
             else
             {
@@ -113,14 +118,25 @@ namespace ScriptTutorials
         // Daftar aksi pengujian yang sesuai dengan indeks tutorial
         private Dictionary<int, bool> tutorialTests = new Dictionary<int, bool>();
 
-        private void Awake()
-        {
-            // Inisialisasi dictionary aksi pengujian
-            tutorialTests.Add(0, false); // HeadTest
-            tutorialTests.Add(1, false); // WalkTest
-            tutorialTests.Add(2, false); // SelectTest
-            tutorialTests.Add(3, false); // CursorTest
-            
-        }
+        //public void SwitchSprite()
+        //{
+
+        //    if (currentCheckbox != null && checkedCheckbox != null)
+        //    {
+        //        if (currentCheckbox.sprite = originalSprite)
+        //        {
+        //            currentCheckbox.sprite = checkedCheckbox;
+        //        }
+
+        //        else if (currentCheckbox.sprite = checkedCheckbox)
+        //        {
+        //            currentCheckbox.sprite = originalSprite;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Debug.LogWarning("Pastikan checkbox dan checkedCheckbox sudah diatur.");
+        //    }
+        //}
     }
 }

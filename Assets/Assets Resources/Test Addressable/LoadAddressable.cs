@@ -1,137 +1,70 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEngine.UI;
-using UnityEngine.Events;
 
-public class LoadAddressable : MonoBehaviour
+namespace Addressable
 {
-
-    [SerializeField] AssetLabelReference assetLabelReference;
-    [SerializeField] Text uiText;
-    [SerializeField] List<GameObject> _instanceObject;
-    [SerializeField] Slider progressBar;
-    [SerializeField] UnityEvent AfterLoad;
-
-    private List<GameObject> loadedInstances = new List<GameObject>();
-
-    private void Start()
+    public class LoadAddressable : MonoBehaviour
     {
-        LoadAssets();
-        Debug.Log("load");
-    }
+        [SerializeField] List<AssetReference> instantiateObjects;
+        private Dictionary<AssetReference, AsyncOperationHandle<GameObject>> handles = new Dictionary<AssetReference, AsyncOperationHandle<GameObject>>();
+        private List<GameObject> instantiatedObjects = new List<GameObject>();
 
-    private void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.T))
-        //{
-        //    LoadAssets();
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.R))
-        //{
-        //    ReleaseLoadedInstances();
-        //}
-    }
-
-    public void DoAddressable()
-    {
-        LoadAssets();
-    }
-
-    public void RealeaseAddressable()
-    {
-        ReleaseLoadedInstances();
-    }
-
-    private async void LoadAssets()
-    {
-        AsyncOperationHandle<IList<GameObject>> asyncOperationHandle = Addressables.LoadAssetsAsync<GameObject>(assetLabelReference, null);
-
-        while (!asyncOperationHandle.IsDone)
+        private void Start()
         {
-            // Cek jika progres bar sudah diinisialisasi
-            if (progressBar != null)
+            LoadAssets();
+        }
+
+        #region LoadAsset
+        // Load assets from cloud
+        public void LoadAssets()
+        {
+            foreach (var asset in instantiateObjects)
             {
-                // Update nilai progres bar dengan persentase loading
-                progressBar.value = asyncOperationHandle.PercentComplete;
+                var asyncOperationHandle = asset.LoadAssetAsync<GameObject>();
+                asyncOperationHandle.Completed += OnAssetLoaded;
+                handles[asset] = asyncOperationHandle;
             }
-
-           
-
-            // Yield control back to Unity to update UI
-            await Task.Yield();
         }
 
-        try
+        // Callback when asset is loaded
+        private void OnAssetLoaded(AsyncOperationHandle<GameObject> obj)
         {
-            // Tunggu sampai proses load selesai
-            await asyncOperationHandle.Task;
-        }
-        catch (Exception e)
-        {
-            Debug.LogError($"Error loading assets: {e}");
-            UpdateUIText("Failed to load assets.");
-            return;
-        }
-
-        if (asyncOperationHandle.Status == AsyncOperationStatus.Succeeded)
-        {
-            IList<GameObject> loadedObjects = asyncOperationHandle.Result;
-
-            foreach (GameObject obj in loadedObjects)
+            if (obj.Status == AsyncOperationStatus.Succeeded)
             {
-                GameObject instance = Instantiate(obj);
-                loadedInstances.Add(instance);
-                _instanceObject.Add(instance);
+                GameObject asset = obj.Result;
+                InstantiateAsset(asset);
             }
-
-            AfterLoad.Invoke();
-
-            UpdateUIText($"Loaded {loadedObjects.Count} assets successfully!");
         }
-        else
+
+        // Instantiate
+        private void InstantiateAsset(GameObject asset)
         {
-            UpdateUIText("Failed to load assets.");
+            GameObject instance = Instantiate(asset);
+            instantiatedObjects.Add(instance);
         }
-    }
 
-
-
-    private void ReleaseLoadedInstances()
-    {
-        // Melepaskan semua instance yang dimuat
-        foreach (GameObject instance in loadedInstances)
+        // Release
+        public void ReleaseAssets()
         {
-            Destroy(instance); // Menghancurkan instance GameObject
+            foreach (var obj in instantiatedObjects)
+            {
+                Addressables.ReleaseInstance(obj);
+            }
+            instantiatedObjects.Clear();
+
+            foreach (var handle in handles.Values)
+            {
+                if (handle.IsValid())
+                {
+                    Addressables.Release(handle);
+                }
+            }
+            handles.Clear();
         }
 
-        // Membersihkan daftar instance
-        loadedInstances.Clear();
-
-        UpdateUIText("Released all loaded instances.");
-    }
-
-    private void UpdateUIText(string message)
-    {
-        if (uiText != null)
-        {
-            uiText.text = message;
-        }
-        else
-        {
-            Debug.LogWarning("UI Text reference is not set. Please assign the UI Text component in the Inspector.");
-        }
-    }
-
-    private void OnDestroy()
-    {
-        // Memastikan semua instance GameObject dihancurkan saat objek dihancurkan
-        ReleaseLoadedInstances();
+        #endregion
     }
 }
