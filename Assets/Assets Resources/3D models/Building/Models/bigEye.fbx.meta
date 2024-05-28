@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 3ca5f60a0aa2ee84aa687671b0e7a949
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigEyeTv.002
+    second: {fileID: 2100000, guid: 509fccc6dced1cc47851365201203096, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigeyePoster.002
+    second: {fileID: 2100000, guid: 66d0cd66d50730843ab870ea8dc630e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black1.008
+    second: {fileID: 2100000, guid: 54c0a5175fe5e70418adf3e6895f6e7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black1.009
+    second: {fileID: 2100000, guid: 76f4d4f834d23d34abc8c43d80403d5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black2.014
+    second: {fileID: 2100000, guid: 3697b3babf6f0ac459a9b06a5802fdd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black2.015
+    second: {fileID: 2100000, guid: 653e4da7bb70f4d4ba6917d36eb5adb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BoxIntro
+    second: {fileID: 2100000, guid: f71064c5b3c3f6a4c9fda578e80a9527, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QR.Border.009
+    second: {fileID: 2100000, guid: ba02b95354e78b74da7fb60d65330857, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QRBigeye.003
+    second: {fileID: 2100000, guid: 7fe41e4cee1599342b09b58fbf29f277, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignMetalic.017
+    second: {fileID: 2100000, guid: c163e838cde3d7d4d899fad35263d9c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sofa.007
+    second: {fileID: 2100000, guid: 32b96abe13824004da483da98b7746fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TextInterplay.024
+    second: {fileID: 2100000, guid: 33525513720289844bf00fae15f3a77d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White1.014
+    second: {fileID: 2100000, guid: a5454110005ca94448bd448dde76139b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White1.015
+    second: {fileID: 2100000, guid: 0881bf6bf83263e45ada50d3c9be15b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _41.003
+    second: {fileID: 2100000, guid: aedea84802445b64d8f87331db3bfae1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aTvBorder
+    second: {fileID: 2100000, guid: 63dab0c11761baa46b9e3cfeed97d978, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aWhite Interior
+    second: {fileID: 2100000, guid: 7fad690982377b4499f3945fab65c9da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: big eye walpaper.003
+    second: {fileID: 2100000, guid: 0e3780d346fd0b24d87b75888ae82baa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye.004
+    second: {fileID: 2100000, guid: bc45be63f002768418afca89710d3204, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: telkom coi.006
+    second: {fileID: 2100000, guid: 384871890904f284c85b6e42e0ddc20e, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BigeyePoster
+    second: {fileID: 2800000, guid: 83386bfbaa97f19428f00e8397e4b41d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: QRBigeye
+    second: {fileID: 2800000, guid: 61497109295a97c46a494d98dee0f0ce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screenshot 2023-10-24 150105
+    second: {fileID: 2800000, guid: 239cda038c96dd641beb2ea7ce64aafc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screenshot 2023-10-25 174112
+    second: {fileID: 2800000, guid: fd03da7aebe0ea94ab59604c0cfe7ad5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Standing TV Logo Telkom
+    second: {fileID: 2800000, guid: ba4e0dee14e78134f9e24212dd95db50, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fabric_134_normal-2K
+    second: {fileID: 2800000, guid: ba0d7e41ebe27c94e99b4399516d1c0f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: y1co8h48-320
+    second: {fileID: 2800000, guid: b56da66de0e061d47b656f0f9c607b6d, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

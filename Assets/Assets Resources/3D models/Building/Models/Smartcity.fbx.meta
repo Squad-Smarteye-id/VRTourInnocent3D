@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 07bc451270272ec46ac9a7bad1abe190
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BoxIntro
+    second: {fileID: 2100000, guid: 7a97a643fbf23f2408946b6bbd473e73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.118
+    second: {fileID: 2100000, guid: 379ddef42ed3b7a41845aa17d2cece74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.119
+    second: {fileID: 2100000, guid: bb929e3a92eeb8345af99ae54c212681, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.120
+    second: {fileID: 2100000, guid: 06e97bf3b98ee084385eb147c3bdc70a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignMetalic2
+    second: {fileID: 2100000, guid: a090f03dd4a7a9b4887f509e29cc7dbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignMetalicText
+    second: {fileID: 2100000, guid: 5d12b0e5f9b331b4fb0d160689e3d660, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmartCityFront
+    second: {fileID: 2100000, guid: 09366a278ba9007438cf89accde78595, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TextInterplay.006
+    second: {fileID: 2100000, guid: 4cdb1038f4efc1746b785b0fc0bbf36f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TvScreen.DoorAccess
+    second: {fileID: 2100000, guid: 520bd7833c0823f4cab7a7b81f015f2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TvScreen.Meter
+    second: {fileID: 2100000, guid: 4d20bdeb38ea4f8418142a403895dc2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TvScreen.PJU
+    second: {fileID: 2100000, guid: 0a56da138e9a14b469a057c7bedee5f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TvScreen.PJU Nema
+    second: {fileID: 2100000, guid: 9fc75729b5943704099154381e3fbdb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aTvBorder
+    second: {fileID: 2100000, guid: 38d063d95d7bf8841b61c28eccaf656d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aWhite Interior
+    second: {fileID: 2100000, guid: 00dc782ad71a99741b3ede761ee274cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walpaper smart city
+    second: {fileID: 2100000, guid: e5553741d63e5fa4695c17951dee6e5d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screenshot 2023-10-24 155725
+    second: {fileID: 2800000, guid: dee61bd37dc452a4eab0947c9d91382c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screenshot 2023-10-24 160030
+    second: {fileID: 2800000, guid: 3ce5070e618a7ab4e825e7a0edcd1e0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screenshot 2023-10-24 160041
+    second: {fileID: 2800000, guid: 94dc3b43ec9c71b47ae4e0e846ce0004, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screenshot 2023-10-25 174112
+    second: {fileID: 2800000, guid: db4b6af6f3dfb9f4385d3a51c0100d3e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SmartDoorAccess
+    second: {fileID: 2800000, guid: 4c717b4ddee7d6443933ea89ce7eca9f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SmartMeter
+    second: {fileID: 2800000, guid: 6114edf7beca3d34ba4ac8119fb1aa68, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SmartPJU
+    second: {fileID: 2800000, guid: f8017a1e959e0a94196e328852af8d2b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SmartPJUnema
+    second: {fileID: 2800000, guid: 0c95e677535180e46a4cf27c49ef8839, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: V4-WP-Smart City
+    second: {fileID: 2800000, guid: 691de8995a561ae4d8be7a751c6d0043, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
