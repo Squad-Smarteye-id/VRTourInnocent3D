@@ -13,19 +13,15 @@ namespace ScriptTutorials
         public GameObject TutorialCanvas;
         public bool tutorialStatus;
         public int relatedTestIndex; // Indeks aksi pengujian terkait
+        public Image checkbox;
     }
 
     public class PlayerTutorialManager : MonoBehaviour
     {
         [SerializeField] private List<MyTutorial> tutorialList = new List<MyTutorial>();
-        [SerializeField] private float tutorialSwitchDelay = 3f;
-
+        [SerializeField] private float tutorialSwitchDelay;
         private int currentTutorialIndex = 0;
-        
-        //checkbox
-        //private Image currentCheckbox;
-        //public Sprite checkedCheckbox;
-        //private Sprite originalSprite;
+        public Sprite chekedChekbox;
 
         private void Awake()
         {
@@ -39,7 +35,7 @@ namespace ScriptTutorials
 
         private void Start()
         {
-            //originalSprite = currentCheckbox.sprite;
+            
         }
 
         public void SetupCurrentTutorial()
@@ -47,21 +43,21 @@ namespace ScriptTutorials
             // Memeriksa apakah indeks tutorial saat ini valid
             if (currentTutorialIndex >= 0 && currentTutorialIndex < tutorialList.Count)
             {
-                MyTutorial currentTutorial = tutorialList[currentTutorialIndex];
-
+                // Menonaktifkan semua tutorial
                 foreach (MyTutorial tutorial in tutorialList)
                 {
                     tutorial.TutorialCanvas.SetActive(false);
                 }
 
-                currentTutorial.TutorialCanvas.SetActive(true);
-
+                // Mengaktifkan tutorial yang tepat
+                tutorialList[currentTutorialIndex].TutorialCanvas.SetActive(true);
             }
             else
             {
                 Debug.LogWarning("Indeks tutorial saat ini tidak valid.");
             }
         }
+
 
         public void CompleteCurrentTutorial()
         {
@@ -73,10 +69,9 @@ namespace ScriptTutorials
                 {
                     // Menandai tutorial sebagai selesai
                     currentTutorial.tutorialStatus = true;
+                    currentTutorial.checkbox.sprite = chekedChekbox;
                     Debug.Log("Tutorial ke-" + (currentTutorialIndex + 1) + " selesai.");
 
-                    // Menjalankan coroutine untuk beralih ke tutorial berikutnya setelah jeda
-                    StartCoroutine(SwitchToNextTutorialWithDelay());
                 }
             }
             else
@@ -85,12 +80,15 @@ namespace ScriptTutorials
             }
         }
 
-        private IEnumerator SwitchToNextTutorialWithDelay()
+        public void NextTutorial()
         {
-            // Menunggu selama beberapa detik sebelum melanjutkan ke tutorial berikutnya
-            yield return new WaitForSeconds(tutorialSwitchDelay);
+            StartCoroutine(SwitchToNextTutorial());
+        }
 
-            // Lanjut ke tutorial berikutnya jika masih ada
+        private IEnumerator SwitchToNextTutorial()
+        {
+            yield return new WaitForSeconds(tutorialSwitchDelay); // Menunggu selama waktu yang ditentukan
+
             currentTutorialIndex++;
             if (currentTutorialIndex < tutorialList.Count)
             {
@@ -118,25 +116,5 @@ namespace ScriptTutorials
         // Daftar aksi pengujian yang sesuai dengan indeks tutorial
         private Dictionary<int, bool> tutorialTests = new Dictionary<int, bool>();
 
-        //public void SwitchSprite()
-        //{
-
-        //    if (currentCheckbox != null && checkedCheckbox != null)
-        //    {
-        //        if (currentCheckbox.sprite = originalSprite)
-        //        {
-        //            currentCheckbox.sprite = checkedCheckbox;
-        //        }
-
-        //        else if (currentCheckbox.sprite = checkedCheckbox)
-        //        {
-        //            currentCheckbox.sprite = originalSprite;
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Debug.LogWarning("Pastikan checkbox dan checkedCheckbox sudah diatur.");
-        //    }
-        //}
     }
 }
