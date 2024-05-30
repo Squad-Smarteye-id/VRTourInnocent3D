@@ -2,8 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
+using UnityEngine.Events;
+using UnityEngine.InputSystem.iOS;
 
 namespace ScriptTutorials
 {
@@ -14,14 +15,21 @@ namespace ScriptTutorials
         public bool tutorialStatus;
         public int relatedTestIndex; // Indeks aksi pengujian terkait
         public Image checkbox;
+        public Button NextButton;
     }
 
     public class PlayerTutorialManager : MonoBehaviour
     {
         [SerializeField] private List<MyTutorial> tutorialList = new List<MyTutorial>();
         [SerializeField] private float tutorialSwitchDelay;
+
         private int currentTutorialIndex = 0;
+
         public Sprite chekedChekbox;
+        public Sprite buttonEnable;
+
+        public UnityEvent Onfinish;
+        //public UnityEvent onRestart;
 
         private void Awake()
         {
@@ -70,6 +78,8 @@ namespace ScriptTutorials
                     // Menandai tutorial sebagai selesai
                     currentTutorial.tutorialStatus = true;
                     currentTutorial.checkbox.sprite = chekedChekbox;
+                    currentTutorial.NextButton.image.sprite = buttonEnable;
+                    currentTutorial.NextButton.enabled = true;
                     Debug.Log("Tutorial ke-" + (currentTutorialIndex + 1) + " selesai.");
 
                 }
@@ -89,6 +99,8 @@ namespace ScriptTutorials
         {
             yield return new WaitForSeconds(tutorialSwitchDelay); // Menunggu selama waktu yang ditentukan
 
+            MyTutorial currentTutorial = tutorialList[currentTutorialIndex];
+
             currentTutorialIndex++;
             if (currentTutorialIndex < tutorialList.Count)
             {
@@ -96,10 +108,29 @@ namespace ScriptTutorials
             }
             else
             {
-                Debug.Log("Semua tutorial selesai.");
-                // Tambahkan logika untuk menyelesaikan urutan tutorial
+                currentTutorial.TutorialCanvas.SetActive(false);
+                Onfinish.Invoke();
             }
         }
+
+        //public void RestartGame()
+        //{
+        //    // Mengatur ulang status setiap tutorial
+        //    foreach (MyTutorial tutorial in tutorialList)
+        //    {
+        //        tutorial.tutorialStatus = false;
+        //        tutorial.checkbox.sprite = null; // Atur sprite checkbox kembali ke default atau kosong
+        //        tutorial.NextButton.image.sprite = null; // Atur sprite tombol kembali ke default atau kosong
+        //        /*tutorial.NextButton.enabled = false;*/ // Nonaktifkan tombol
+        //    }
+
+        //    // Atur ulang indeks tutorial saat ini ke yang pertama
+        //    currentTutorialIndex = 0;
+        //    SetupCurrentTutorial();
+
+        //    onRestart.Invoke();
+        //    Debug.Log("Permainan diulang.");
+        //}
 
         // Mendapatkan indeks tutorial saat ini
         public int GetCurrentTutorialIndex()
@@ -115,6 +146,8 @@ namespace ScriptTutorials
 
         // Daftar aksi pengujian yang sesuai dengan indeks tutorial
         private Dictionary<int, bool> tutorialTests = new Dictionary<int, bool>();
+
+        
 
     }
 }

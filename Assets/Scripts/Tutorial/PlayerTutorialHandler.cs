@@ -140,7 +140,7 @@ namespace ScriptTutorials
             // tutor tangan
             if (inputData._rightController.TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 controllerPosition))
             {
-                if (controllerPosition.y >= 0.5f && controllerPosition.x > 0f)
+                if (controllerPosition.y >= .5f && controllerPosition.x > .5f)
                 {
                     Debug.Log(" Controller Berhasil : " + controllerPosition);
 
