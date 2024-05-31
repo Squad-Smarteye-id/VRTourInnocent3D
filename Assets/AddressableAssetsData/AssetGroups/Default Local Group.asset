@@ -16,42 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: fc594074fa36a134da0e04b5983796a0
-  m_SerializeEntries:
-  - m_GUID: ce081c888ed9b40409db1b1b1eae2516
-    m_Address: Assets/Assets Resources/Addressable Prefabs/Vidio_AE1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fc6efbf371ba30e428f97f0fded9647d
-    m_Address: Assets/Assets Resources/Addressable Prefabs/Vidio_AE2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1323b241cc6354d49a8f651c6ac67c02
-    m_Address: Assets/Assets Resources/Addressable Prefabs/Vidio_BagiData1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5b5bbd3987c650a45a5d4dc0d79229ab
-    m_Address: Assets/Assets Resources/Addressable Prefabs/Vidio_BagiData2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ecc3a0e68e9a27544b0cb2cd8c07c36f
-    m_Address: Assets/Assets Resources/Addressable Prefabs/Vidio_BagiData3.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1bbad6b0f7c0d0d498aeea75c1ed5ea6
-    m_Address: Assets/Assets Resources/Addressable Prefabs/Vidio_Bigbox1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 775b3770e64d6c647b1d791d39558756
-    m_Address: Assets/Assets Resources/Addressable Prefabs/Vidio_Bigbox2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: cd6ee40fbe571a647ac9cd1d63ec56ee, type: 2}
   m_SchemaSet:
