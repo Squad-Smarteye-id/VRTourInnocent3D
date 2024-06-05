@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: 6959f2377822baa40b59fd304cb13a82
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DindingMeja.001
+    second: {fileID: 2100000, guid: 266223696c8cf5740bfa78ccc8379432, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassGrey.002
+    second: {fileID: 2100000, guid: 6e86c8d93fe29e34fa0a983074a97a50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meja.003
+    second: {fileID: 2100000, guid: 32816d7606bb2ba46ac0f5e9773d1928, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal floor.001
+    second: {fileID: 2100000, guid: 1b786c9defbd204468fb53feb9ba07c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Office Chair_Metal.001
+    second: {fileID: 2100000, guid: c7a0e288a3952a148837f32b6606593e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Office Chair_Plastic.001
+    second: {fileID: 2100000, guid: d35c043fda5c3aa4dbc770071373fc4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QR.002
+    second: {fileID: 2100000, guid: fd640edc26ada1847974d4defa71719a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QRYakes.002
+    second: {fileID: 2100000, guid: b28ed57d1b1ec1848a61c639e5fbc5cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Remote.001
+    second: {fileID: 2100000, guid: f3973e4c3ce14ce46a9673edea0195d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RemoteButton.001
+    second: {fileID: 2100000, guid: ca507bcc0a1cd144a9fd6b674dad57d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RemoteLayar1.001
+    second: {fileID: 2100000, guid: c804202a281933c4abae7e294bdb3d21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RemoteLayar2.001
+    second: {fileID: 2100000, guid: b5e2809d0e001ee47bead39b758be7c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign.001
+    second: {fileID: 2100000, guid: 40e8fd2217e65774ea6d746b8a3c1392, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignMetalic.005
+    second: {fileID: 2100000, guid: 1ef0a777c1fa3504ebaaf7cc818c54b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StandRemote.001
+    second: {fileID: 2100000, guid: aaeec12abbc53d249bfc5582dd4a15ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Suhu.001
+    second: {fileID: 2100000, guid: a1c6642c96f761e4ebb9fe7a4b42d581, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SuhuBlack.001
+    second: {fileID: 2100000, guid: 80b3d3fc256cc4344910a3ebdf98157b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tensi.001
+    second: {fileID: 2100000, guid: 8669b6316fa8c6344aceea6734ef9552, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TensiBtnClear.001
+    second: {fileID: 2100000, guid: e0318ac6283773147b8bc3a2b9a1c12c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TensiBtnStartStop.001
+    second: {fileID: 2100000, guid: 319133360c4d7204bbf9e694f1589b01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TensiClearText.001
+    second: {fileID: 2100000, guid: 14f3c748afe692948a1a43e1e80fb05c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TensiLayar.001
+    second: {fileID: 2100000, guid: b0227bf4efdc3c846a62b35b08fecb58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TensiLayar2.001
+    second: {fileID: 2100000, guid: c8e9a3adb2a271a4d9d4ce61f5bda820, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TextInterplay.013
+    second: {fileID: 2100000, guid: 22d6a9741ee45b24eaf2e25e86e5a26b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Timbangan.001
+    second: {fileID: 2100000, guid: 054f1d4157e98f847aa1c8fe86d39a20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TinggiAbu.001
+    second: {fileID: 2100000, guid: 62eab143ede114f40aace226ed58708a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wooden Floor.002
+    second: {fileID: 2100000, guid: 4f7185c093685d24182cb27ba64bff4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aTvBorder
+    second: {fileID: 2100000, guid: 24b2785d2dfac1443b691a77fb86a2bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aWhite Interior
+    second: {fileID: 2100000, guid: 18e9a3369c0b2be4483769ac32e362d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kaca.007
+    second: {fileID: 2100000, guid: e58291cf0f5a8cf4a85ccc3659f46a5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 08d9ea8a73547e74eae0b43829f637ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yakes.001
+    second: {fileID: 2100000, guid: 5acce13bf883a8d478a0bb8281aa3502, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: QRSmartEye
+    second: {fileID: 2800000, guid: 67904ae1fba97234dbc964049831d953, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laminate_floor_02_diff_2k
+    second: {fileID: 2800000, guid: 4552d585b8085524fbe154d3d50546a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laminate_floor_02_nor_gl_2k
+    second: {fileID: 2800000, guid: 9336ecd172aef9e48a4f72c2a97ef217, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laminate_floor_02_rough_2k
+    second: {fileID: 2800000, guid: 4122b5e87b99c3c43b267d16f6810564, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal floor_ao
+    second: {fileID: 2800000, guid: 2efa0802849dc6148add0c4af62c4686, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal floor_diffuseOriginal
+    second: {fileID: 2800000, guid: 66946892811f4d74b942211356fd1947, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: yakes
+    second: {fileID: 2800000, guid: cf992399e34ba6241aa49bcc98ceb770, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
