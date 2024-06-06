@@ -2,22 +2,25 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 
-[CreateAssetMenu]
-public class TargetAPIConfig : ScriptableObject
+namespace VRInnocent.Auth
 {
-    public string url;
-    public List<endpointTarget> endpoints;
-
-    [Serializable]
-    public struct endpointTarget
+    [CreateAssetMenu]
+    public class TargetAPIConfig : ScriptableObject
     {
-        public string title;
-        public string targetEndpoint;
-    }
+        public string url;
+        public List<endpointTarget> endpoints;
 
-    public string GetEndpoint(string _title)
-    {
-        var target = endpoints.Find((x) => x.title == _title);
-        return target.targetEndpoint;
+        [Serializable]
+        public struct endpointTarget
+        {
+            public string title;
+            public string targetEndpoint;
+        }
+
+        public string GetEndpoint(string _title)
+        {
+            var target = endpoints.Find((x) => x.title == _title);
+            return target.targetEndpoint;
+        }
     }
 }

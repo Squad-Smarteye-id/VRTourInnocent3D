@@ -1,6 +1,6 @@
 
 using UnityEditor;
-namespace VirtualInnocent.Content
+namespace VRInnocent.Content
 {
 #if UNITY_EDITOR
     [CustomEditor(typeof(ContentHandler))]

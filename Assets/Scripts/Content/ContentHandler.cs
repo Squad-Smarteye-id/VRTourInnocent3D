@@ -3,7 +3,7 @@ using UnityEngine;
 using TProject;
 using TMPro;
 
-namespace VirtualInnocent.Content
+namespace VRInnocent.Content
 {
     public class ContentHandler : MonoBehaviour
     {
