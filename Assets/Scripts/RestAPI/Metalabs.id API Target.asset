@@ -16,3 +16,5 @@ MonoBehaviour:
   endpoints:
   - title: login
     targetEndpoint: api/login
+  - title: feedback
+    targetEndpoint: api/feedback-vr

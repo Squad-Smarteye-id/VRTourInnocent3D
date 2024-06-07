@@ -4,7 +4,7 @@ using UnityEngine;
 using Newtonsoft.Json.Linq;
 using System;
 
-namespace VRInnocent.Auth
+namespace VRInnocent.RestAPI
 {
     public abstract class RestAPIHandler : MonoBehaviour
     {

@@ -1,13 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Newtonsoft.Json;
 using VRInnocent.Utils;
+using VRInnocent.RestAPI;
+using Newtonsoft.Json.Linq;
+using UnityEngine.Events;
 
 namespace VRInnocent.Content
 {
-    public class FeedbackController : MonoBehaviour
+    public class FeedbackController : RestAPIHandler
     {
+        public string interplayName;
         private Color defaultColor = Color.white; // Warna default (FFFFFF)
         public Color positiveColor;
         public Color negativeColor;
@@ -21,11 +24,16 @@ namespace VRInnocent.Content
 
         public List<int> interplayScore = new List<int>();
 
+        [Space]
+        [Header("Event")]
+        [Space]
+        public UnityEvent OnFeedbackSent;
+
         void Start()
         {
             for (int i = 0; i < buttonPositive.Length; i++)
             {
-                interplayScore.Add(-1);
+                interplayScore.Add(0);
             }
 
             canvasGroup = panelContainer.GetComponent<CanvasGroup>();
@@ -42,7 +50,7 @@ namespace VRInnocent.Content
         {
             for (int i = 0; i < buttonPositive.Length; i++)
             {
-                interplayScore[i] = -1;
+                interplayScore[i] = 0;
                 ResetBtnSelectionColors(i);
             }
         }
@@ -59,7 +67,7 @@ namespace VRInnocent.Content
             {
                 ResetBtnSelectionColors(questionIndex);
                 buttonPositive[questionIndex].GetComponent<Image>().color = positiveColor;
-                interplayScore[questionIndex] = 0;
+                interplayScore[questionIndex] = 2; // number 2 for positive feedback
             }
         }
 
@@ -69,7 +77,7 @@ namespace VRInnocent.Content
             {
                 ResetBtnSelectionColors(questionIndex);
                 buttonNegative[questionIndex].GetComponent<Image>().color = negativeColor;
-                interplayScore[questionIndex] = 1;
+                interplayScore[questionIndex] = 1; // number 2 for negative feedback
             }
         }
 
@@ -83,8 +91,19 @@ namespace VRInnocent.Content
         {
             if (ValidateScores())
             {
-                string json = JsonConvert.SerializeObject(interplayScore, Formatting.Indented);
-                Debug.Log("JSON: " + json);
+                Dictionary<string, string> jData = new Dictionary<string, string>
+                {
+                    {"userId", PlayerManager.Instance.userId},
+                    {"for", interplayName.ToString()},
+                    {"ratingQ1", interplayScore[0].ToString()},
+                    {"ratingQ2", interplayScore[1].ToString()},
+                    {"ratingQ3", interplayScore[2].ToString()},
+                    {"ratingQ4", interplayScore[3].ToString()},
+                    {"ratingQ5", interplayScore[4].ToString()}
+                };
+
+                RowData dataObject = new RowData(jData);
+                restAPI.PostAction(dataObject.baseData, OnSuccessResult, OnProtocolErr, DataProcessingErr, "feedback");
 
                 ResetAllButtonColors();
             }
@@ -98,12 +117,27 @@ namespace VRInnocent.Content
         {
             foreach (int score in interplayScore)
             {
-                if (score == -1)
+                if (score == 0)
                 {
-                    return false; // Mengembalikan false jika ada skor yang -1
+                    return false; // Mengembalikan false jika ada skor yang 0
                 }
             }
             return true; // Mengembalikan true jika semua skor sudah terisi
+        }
+
+        public override void OnSuccessResult(JObject result)
+        {
+            OnFeedbackSent?.Invoke();
+        }
+
+        public override void OnProtocolErr(JObject result)
+        {
+
+        }
+
+        public override void DataProcessingErr(JObject result)
+        {
+
         }
     }
 }

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
-namespace VRInnocent.Auth
+namespace VRInnocent.RestAPI
 {
     public class Authentication : RestAPIHandler
     {
@@ -55,7 +56,7 @@ namespace VRInnocent.Auth
         };
 
             RowData dataObject = new RowData(newPlayer);
-            restAPI.PostAction(dataObject.baseData, "register", OnSuccessResult, OnProtocolErr, DataProcessingErr);
+            restAPI.PostAction(dataObject.baseData, OnSuccessResult, OnProtocolErr, DataProcessingErr, "register");
         }
 
         public void OnClickLogin()
@@ -80,7 +81,10 @@ namespace VRInnocent.Auth
             };
 
             RowData dataObject = new RowData(newPlayer);
-            restAPI.PostAction(dataObject.baseData, "login", OnSuccessResult, OnProtocolErr, DataProcessingErr);
+            var test = JsonConvert.SerializeObject(dataObject);
+            Debug.Log("JSON: " + dataObject.baseData);
+
+            restAPI.PostAction(dataObject.baseData, OnSuccessResult, OnProtocolErr, DataProcessingErr, "login");
         }
 
         private void Start()
@@ -125,10 +129,10 @@ namespace VRInnocent.Auth
             if (isLoginSection)
             {
                 RootLogin.Root returnData = result.ToObject<RootLogin.Root>();
-                RootLogin.loginResponses.Add(returnData.response);  // Add to static list
+                // RootLogin.loginResponses.Add(returnData.response);  // Add to static list
                 Debug.Log($"{returnData.response.userName}. player token: {returnData.response.access_token}");
 
-                PlayerManager.Instance.displayedResponses = RootLogin.loginResponses;
+                PlayerManager.Instance.displayedResponses = returnData.response;
             }
             else
             {
@@ -195,7 +199,7 @@ namespace VRInnocent.Auth
             }
 
             // Static list to hold responses
-            public static List<Response> loginResponses = new List<Response>();
+            // public static List<Response> loginResponses = new List<Response>();
         }
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 
-namespace VRInnocent.Auth
+namespace VRInnocent.RestAPI
 {
     [CreateAssetMenu]
     public class TargetAPIConfig : ScriptableObject

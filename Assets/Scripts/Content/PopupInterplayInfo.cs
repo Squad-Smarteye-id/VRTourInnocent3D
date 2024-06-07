@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Burst.CompilerServices;
 using UnityEngine;
 using VRInnocent.Email;
 
@@ -10,6 +7,11 @@ namespace VRInnocent.Content
     {
         public EmailSender playbookPanel;
         public FeedbackController feedbackController;
+        public SuccessPopup popupPrefab;
+
+        [Space]
+        [Header("UI Components")]
+        public Transform canvasRight;
 
         public enum PanelType
         {
@@ -60,5 +62,11 @@ namespace VRInnocent.Content
             OpenPanel(PanelType.FEEDBACK);
         }
         public void NonePanelType() => OpenPanel(PanelType.NONE);
+
+        public void ShowPopupSeuccess(string popupName)
+        {
+            var popup = Instantiate(popupPrefab, canvasRight);
+            popup.ShowPopupAnimate(popupName);
+        }
     }
 }

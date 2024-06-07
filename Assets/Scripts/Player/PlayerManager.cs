@@ -1,16 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using VRInnocent.Auth;
+using VRInnocent.RestAPI;
 
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
 
     [SerializeField]
-    public List<Authentication.RootLogin.Response> displayedResponses;
+    public Authentication.RootLogin.Response displayedResponses;
 
-    public string AccessToken { get; private set; }
+    public string userId
+    {
+        get => displayedResponses.userId;
+        private set => userId = value;
+    }
+
+    private string m_userEmail = "shantaufiq021@gmail.com";
+    public string userEmail { get => m_userEmail; set => m_userEmail = value; }
 
     void Awake()
     {
@@ -23,15 +29,5 @@ public class PlayerManager : MonoBehaviour
         {
             Destroy(gameObject);  // Ensures that there is only one instance
         }
-    }
-
-    public void SetAccessToken(string token)
-    {
-        AccessToken = token;
-    }
-
-    public string GetAccessToken()
-    {
-        return AccessToken;
     }
 }

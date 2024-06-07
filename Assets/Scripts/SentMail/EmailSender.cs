@@ -19,28 +19,31 @@ namespace VRInnocent.Email
         public string subject;
         [TextArea]
         public string body;
-        [Space]
-        public string SendTo;
-        public GameObject[] buttons;
 
         [Space]
         [Header("UI Components")]
         public GameObject panelContainer;
-        private CanvasGroup canvasGroup;
+        private CanvasGroup m_canvasGroup;
+        public GameObject panelComfirmationEmail;
+        public GameObject panelEditEmail;
+        public TextMeshProUGUI emailView;
+        public TextMeshProUGUI placeholderView;
+        [Space]
+        public GameObject[] buttons;
 
         [Space]
         public UnityEvent OnSuccess;
 
         void Start()
         {
-            canvasGroup = panelContainer.GetComponent<CanvasGroup>();
-            if (canvasGroup == null)
+            m_canvasGroup = panelContainer.GetComponent<CanvasGroup>();
+            if (m_canvasGroup == null)
             {
-                canvasGroup = panelContainer.AddComponent<CanvasGroup>();
+                m_canvasGroup = panelContainer.AddComponent<CanvasGroup>();
             }
 
             panelContainer.transform.localPosition = new Vector3(-1084, 0, 0);
-            canvasGroup.alpha = 0;
+            m_canvasGroup.alpha = 0;
         }
 
         private bool IsValidEmail(string email)
@@ -54,7 +57,7 @@ namespace VRInnocent.Email
 
         public void SendEmail()
         {
-            string recipientEmail = SendTo;
+            string recipientEmail = PlayerManager.Instance.userEmail;
 
             if (string.IsNullOrEmpty(recipientEmail) && !IsValidEmail(recipientEmail))
             {
@@ -130,12 +133,30 @@ namespace VRInnocent.Email
             }
         }
 
-        public void ShowPanel() =>
-            UIAnimator.SlideHorizontalWithFade(panelContainer, canvasGroup, 0, 1);
+        public void ShowPanel()
+        {
+            UpdateEmailTextView();
+            UIAnimator.SlideHorizontalWithFade(panelContainer, m_canvasGroup, 0, 1);
+        }
 
         public void HidePanel()
         {
-            UIAnimator.SlideHorizontalWithFade(panelContainer, canvasGroup, -1084, 0);
+            UIAnimator.SlideHorizontalWithFade(panelContainer, m_canvasGroup, -1084, 0);
+        }
+
+        public void UpdateEmailTextView()
+        {
+            emailView.text = PlayerManager.Instance.userEmail;
+            placeholderView.text = PlayerManager.Instance.userEmail;
+        }
+
+        public void OnClickChangeEmail(TMP_InputField _input)
+        {
+            PlayerManager.Instance.userEmail = _input.text;
+            UpdateEmailTextView();
+
+            panelComfirmationEmail.SetActive(true);
+            panelEditEmail.SetActive(false);
         }
     }
 }
