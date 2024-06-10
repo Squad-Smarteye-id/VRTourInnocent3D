@@ -6,7 +6,7 @@ using Tproject.AudioManager;
 using System.Linq;
 using System;
 
-namespace VirtualInnocent.Content
+namespace VRInnocent.Content
 {
     public class ContentLiberary : MonoBehaviour
     {
