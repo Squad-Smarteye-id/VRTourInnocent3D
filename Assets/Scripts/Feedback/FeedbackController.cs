@@ -5,6 +5,7 @@ using VRInnocent.Utils;
 using VRInnocent.RestAPI;
 using Newtonsoft.Json.Linq;
 using UnityEngine.Events;
+using Unity.VisualScripting;
 
 namespace VRInnocent.Content
 {
@@ -31,6 +32,8 @@ namespace VRInnocent.Content
 
         void Start()
         {
+            if (string.IsNullOrEmpty(interplayName)) Debug.LogWarning("Interplay name is null");
+
             for (int i = 0; i < buttonPositive.Length; i++)
             {
                 interplayScore.Add(0);

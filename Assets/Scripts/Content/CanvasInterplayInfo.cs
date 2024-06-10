@@ -3,7 +3,7 @@ using VRInnocent.Email;
 
 namespace VRInnocent.Content
 {
-    public class PopupInterplayInfo : MonoBehaviour
+    public class CanvasInterplayInfo : MonoBehaviour
     {
         public EmailSender playbookPanel;
         public FeedbackController feedbackController;
